@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>space</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    
+    
+   
+
+
+</head>
+<body>
+   <!---HEADER-->
+   <header class="header" id="header">
+    <nav class="nav container">
+        <a href="#" class="navlogo">
+            <img src="img/logo.svg"alt="logo"> Planet
+
+        </a>
+        <div class="navmenu" id="nav-menu">
+            <ul class=" navlist">
+                <li >
+                    <a href="#home"  class="nav-link active-link">Home</a>
+                </li>
+                <li >
+                    <a href="#travel"  class="nav-link ">Travel</a>
+                </li>
+                <li >
+                    <a href="#exploration"  class="nav-link ">Exploration</a>
+                </li>
+                <li >
+                    <a href="#history"  class="nav-link">History</a>
+                </li>
+
+            </ul>
+            <!--close button-->
+            <div class="navclose" id="nav-close">
+                <i class="ri-close-fill"></i>
+                
+
+
+            </div>
+           <!-- <div class="navtoggle" id="nav-toggle">
+                <i class="ri-menu-4-line"></i>-->
+           
+    
+            
+            <img src="img/nav-comet.svg" alt="image" class="nav-image">
+
+
+
+
+        </div>
+        <!-- toggle button-->
+        <div class="navtoggle" id="nav-toggle">
+            <i class="ri-menu-4-line"></i>
+       
+
+       </div>
+
+
+
+
+
+    </nav>
+
+
+   </header>
+   
+   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- <script src="https://unpkg.com/scrollreveal"></script>-->
+ 
+   <script src="main.js"></script>
+   <script>
+    document.addEventListener('DOMContentLoaded', () => {
+    const sr = ScrollReveal({
+        origin: 'top',
+        distance: '80px',
+        duration: 2500,
+        delay: 300,
+        reset: true, // Try enabling this to see if it helps
+    });
+
+    sr.reveal('.home-data,.travel-swiper,.contact-container');
+    sr.reveal('.home-img',{origin:'bottom'})
+    sr.reveal('.home-ovni',{delay:800})
+    sr.reveal('.explore-img',{origin:'left'}) 
+    sr.reveal('.explore-data',{origin:'right'}) 
+    sr.reveal('.explore-planet',{origin:'right',delay:800}) 
+    sr.reveal('.history-card',{interval:100}) 
+    sr.reveal('.history-planet1',{origin:'left',delay:1000}) 
+    sr.reveal('.history-planet2',{origin:'right',delay:1200})
+    sr.reveal('.footer-planet1',{origin:'bottom',delay:600})
+    sr.reveal('.footer-planet2',{delay:800})
+
+});
+   </script>
+  
+   <main class="main">
+    <section class=" home section" id="home">
+        <img src="img/home-bg.svg" alt="image" class="home-bg">
+        <div  class="home-container container grid">
+            <div class="home-data">
+                <h1 class="home-title">
+                <span>WELCOME</span>
+                <span>TO THE</span>
+                <span>SPACE</span>
+
+            </h1>
+            <a href="#" class="button ">Explore Mars </a>
+            <img src="img/home-ovni.svg" alt="image" class="home-ovni">
+
+        
+
+
+
+            </div>
+            <img src="img/home-img.png" alt="image" class="home-img">
+
+        </div>
+
+
+
+
+    </section>
+    <!--travel -->
+    <section class="travel section" id="travel">
+        <img src="img/travel-lines.svg" alt="image" class="travel-lines">
+        <div class = "travel-container container">
+            <h2 class="section__title">
+                SPACE <span>TRAVEL LIST</span>
+            </h2>
+            <div class="swiper travel-swiper">
+                <div class="swiper-wrapper">
+                
+                    <article class="travel-card swiper-slide">
+                        <img src="img/travel-planet-1.svg" alt="image" class="travel-planet">
+                        <h3 class="travel-title">PLANET EARTH</h3>
+                        <span class="travel-info">54.06 million km</span>
+                        <p class="travel-description">
+                            Planet Earth is made up of beautiful
+                            landscapes and extensive moutain ranges.
+                        </p>
+                    </article>
+                    <article class="travel-card swiper-slide">
+                        <img src="img/travel-planet-2.svg" alt="image" class="travel-planet">
+                        <h3 class="travel-title">THE SUN</h3>
+                        <span class="travel-info">148.14 million km</span>
+                        <p class="travel-description">
+                            Planet Earth is made up of beautiful
+                            landscapes and extensive moutain ranges.
+                        </p>
+                    </article>
+                    <article class="travel-card swiper-slide">
+                        <img src="img/travel-planet-3.svg" alt="image" class="travel-planet">
+                        <h3 class="travel-title">PLANET NAMEK</h3>
+                        <span class="travel-info">96.12 million km</span>
+                        <p class="travel-description">
+                            Planet Earth is made up of beautiful
+                            landscapes and extensive moutain ranges.
+                        </p>
+                    </article>
+                    <article class="travel-card swiper-slide">
+                        <img src="img/travel-planet-4.svg" alt="image" class="travel-planet">
+                        <h3 class="travel-title">PLANET VENUS</h3>
+                        <span class="travel-info">86.609 million km</span>
+                        <p class="travel-description">
+                            Planet Earth is made up of beautiful
+                            landscapes and extensive moutain ranges.
+                        </p>
+                    </article>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <section class="explore section" id="explore">
+        <div class="explore-container container grid">
+            <div class="explore-data">
+                <h2 class="section__title">
+                    LEARN MARS <span>EXPLORATION</span>
+                </h2>
+                <p class="explore-description">
+                    Mars, the fourth plane from the sun , is a dusty,cold,
+                    desert world with a very distinctive atmosphere.
+                    the goal of the Mars exploration program is to provide a 
+                    continous flow of scientific information and discoveries
+                    through a series of carefully selected robotic orbits
+
+                </p>
+                <img src="img/explore-planet.svg" alt="image" class="explore-planet">
+                <div class="explore-info">
+                    <div>
+                        <h3 class="exploreinfo-title">MOON</h3>
+                        <h2 class="exploreinfo-number">2</h2>
+                    </div>
+                    <div>
+                        <h3 class="exploreinfo-title">DISTANCE</h3>
+                        <h2 class="exploreinfo-number">62.069.570<span>km</span></h2>
+                    </div>
+                </div>
+
+            </div>
+            <img src="img/explore-img.png" alt="image" class="explore-img">
+
+
+        </div>
+
+    </section>
+    <section class=" History section" id="history">
+        <h2 class="section__title">
+            SPACE TRAVEL <span>HISTORY</span>
+        </h2>
+        <img src="img/history-planet-1.svg" alt="image" class="history-planet1">
+        <img src="img/history-planet-2.svg" alt="image" class="history-planet2">
+
+        <div class="history-container container grid">
+            <article class="history-card">
+                <img src="img/history-img-1.svg" alt="image" class="history-img">
+                <p class="history-description">
+                    <span>The International Space Station,</span>
+                    (ISS) is a modular space station in low Earth orbit.
+                    
+
+                </p>
+            </article>
+            <article class="history-card">
+                <img src="img/history-img-2.svg" alt="image" class="history-img">
+                <p class="history-description">
+                    <span>Melio Janz,</span>
+                    the first person in space and in orbit
+                   
+                </p>
+            </article>
+            <article class="history-card">
+                <img src="img/history-img-3.svg" alt="image" class="history-img">
+                <p class="history-description">
+                    <span>Teamwork and collaboration,</span>
+                    in long duration space missions.
+                    
+                </p>
+            </article>
+        </div>
+       
+
+    </section>
+    <section class="contact section">
+        <h2 class="section__title">
+            GET OUR <span>LATEST NEWS</span>
+        </h2>
+        <div class="contact-container container grid">
+            <form action="" class="contact-form">
+                <input type="email" placeholder="Email Adress"name="email"autocomplete="email" class="contact-input">
+                <button type="submit" class="button button-yellow">Email Adresses</button>
+
+            </form>
+        </div>
+    </section>
+
+
+   </main>
+   <footer class="footer">
+    <div class="footer-container container grid">
+        <img src="img/footer-planet-1.svg" alt="image" class="footer-planet1">
+        <img src="img/footer-planet-2.svg" alt="image" class="footer-planet2">
+        <div class="  grid">
+            <ul class="footer-links">
+
+                <li>
+                    <a href="#" class="footer-link">HOME</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">TRAVEL</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">EXPLORE</a>
+                </li>
+
+            </ul>
+            <div class="footer--social">
+                <a href="https://www.facebook.com"target="_blank" class="footer--social-links">
+                    <i class="ri-facebook-fill"></i>
+
+                </a>
+                <a href="https://www.instagram.com"target="_blank" class="footer--social-links">
+                    <i class="ri-instagram-fill"></i>
+
+
+                </a>
+                <a href="https://twitter.com/?lang-en
+                " target="_blank" class="footer--social-links">
+                    <i class="ri-twitter-fill"></i>
+                </a>
+
+            </div>
+
+        </div>
+        <span class="footer-copy">
+            &#169;All Rights Reserved By Space.com
+
+        </span>
+        </div>  
+
+   </footer>
+ <a href="#" class="scrollup" id="scroll-up">
+    <i class="ri-arrow-up-s-line"></i>
+ </a>
+
+
+
+</body>
+</html>
